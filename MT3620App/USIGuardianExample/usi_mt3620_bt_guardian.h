@@ -1,0 +1,104 @@
+/* Copyright (c) Microsoft Corporation. All rights reserved.
+   Licensed under the MIT License. */
+
+// This header contains the peripheral pinout definitions for the
+// USI MT3620 Bluetooth (BT) Guardian Board (GB)
+
+#pragma once
+#include "usi_mt3620_bt_combo.h"
+
+// MT3620 USI Guardian Board: RS485 control using GPIO2.
+#define USI_RS485_CONTROL USI_MT3620_BT_COMBO_PIN67_GPIO2
+
+// MT3620 USI Guardian Board: Connect external button using GPIO12.
+#define USI_BUTTON_1 USI_MT3620_BT_COMBO_PIN56_GPIO12
+
+// MT3620 USI Guardian Board: Connect external button using GPIO13.
+#define USI_BUTTON_2 USI_MT3620_BT_COMBO_PIN55_GPIO13
+
+// MT3620 USI Guardian Board: Connect external red LED using GPIO48.
+#define USI_WIFI_LED_RED USI_MT3620_BT_COMBO_PIN52_GPIO48
+
+// MT3620 USI Guardian Board: Connect external green LED using GPIO14.
+#define USI_WIFI_LED_GREEN USI_MT3620_BT_COMBO_PIN54_GPIO14
+
+// MT3620 USI Guardian Board: Connect external blue LED using GPIO11.
+#define USI_WIFI_LED_BLUE USI_MT3620_BT_COMBO_PIN58_GPIO11
+
+// MT3620 USI Guardian Board: Connect external red LED using GPIO45.
+#define USI_BT_LED_RED USI_MT3620_BT_COMBO_PIN24_GPIO45
+
+// MT3620 USI Guardian Board: Connect external green LED using GPIO46.
+#define USI_BT_LED_GREEN USI_MT3620_BT_COMBO_PIN23_GPIO46
+
+// MT3620 USI Guardian Board: Connect external blue LED using GPIO47.
+#define USI_BT_LED_BLUE USI_MT3620_BT_COMBO_PIN53_GPIO47
+
+// MT3620 USI Guardian Board: BT_nRST (RESET) signal on nRF52832.
+#define USI_NRF52_RESET USI_MT3620_BT_COMBO_NRF52_RESET
+
+// MT3620 USI Guardian Board: BT_FW_EN (DFU) signal on nRF52832.
+#define USI_NRF52_DFU USI_MT3620_BT_COMBO_NRF52_DFU
+
+// MT3620 USI Guardian Board: UART on nRF52832.
+#define USI_NRF52_UART USI_MT3620_BT_COMBO_NRF52_UART
+
+// GPIO3 is exposed on J8: pin1(RS485_Enable).
+#define USI_MT3620_BT_GB_J42_PIN1_GPIO3 USI_MT3620_BT_COMBO_PIN66_GPIO3
+
+// GPIO4 is exposed on J32 pin5.
+#define USI_MT3620_BT_GB_J32_PIN5_GPIO41 USI_MT3620_BT_COMBO_PIN28_GPIO41
+
+// GPIO5 is exposed on J32 pin6.
+#define USI_MT3620_BT_GB_J32_PIN6_GPIO42 USI_MT3620_BT_COMBO_PIN27_GPIO42
+
+// GPIO6 is exposed on J32 pin7.
+#define USI_MT3620_BT_GB_J32_PIN7_GPIO57 USI_MT3620_BT_COMBO_PIN3_GPIO57
+
+// GPIO7 is exposed on J32 pin8.
+#define USI_MT3620_BT_GB_J32_PIN8_GPIO59 USI_MT3620_BT_COMBO_PIN2_GPIO59
+
+// GPIO8 is exposed on J32 pin9.
+#define USI_MT3620_BT_GB_J32_PIN9_GPIO58 USI_MT3620_BT_COMBO_PIN94_GPIO58
+
+// GPIO9 is exposed on J32 pin10.
+#define USI_MT3620_BT_GB_J32_PIN10_GPIO56 USI_MT3620_BT_COMBO_PIN1_GPIO56
+
+// GPIO10 is exposed on J32 pin11.
+#define USI_MT3620_BT_GB_J32_PIN11_GPIO35 USI_MT3620_BT_COMBO_PIN38_GPIO35
+
+// GPIO11 is exposed on J32 pin12.
+#define USI_MT3620_BT_GB_J32_PIN12_GPIO60 USI_MT3620_BT_COMBO_PIN93_GPIO60
+
+// GPIO12 is exposed on J32 pin13.
+#define USI_MT3620_BT_GB_J32_PIN13_GPIO33 USI_MT3620_BT_COMBO_PIN40_GPIO33
+
+// GPIO13 is exposed on J32 pin14.
+#define USI_MT3620_BT_GB_J32_PIN14_GPIO34 USI_MT3620_BT_COMBO_PIN39_GPIO34
+
+// GPIO14 is exposed on SJ32 pin15.
+#define USI_MT3620_BT_GB_J32_PIN15_GPIO31 USI_MT3620_BT_COMBO_PIN42_GPIO31
+
+// GPIO15 is exposed on J32 pin16.
+#define USI_MT3620_BT_GB_J32_PIN16_GPIO32 USI_MT3620_BT_COMBO_PIN41_GPIO32
+
+// GPIO16 is exposed on J32 pin19.
+#define USI_MT3620_BT_GB_J32_PIN19_GPIO1 USI_MT3620_BT_COMBO_PIN68_GPIO1
+
+// GPIO16 is exposed on J32 pin20.
+#define USI_MT3620_BT_GB_J32_PIN20_GPIO0 USI_MT3620_BT_COMBO_PIN69_GPIO0
+
+// ISU1 UART is exposed on J32: pin 14 (CTS), pin 15 (TX), pin 13 (RX), pin 16 (RTS).
+#define USI_MT3620_BT_GB_ISU1_UART USI_MT3620_BT_COMBO_ISU1_UART
+
+// ISU1 SPI is exposed on J32: pin 13 (MISO), pin 15 (SCLK), pin 14 (CSA), pin 16 (MOSI), pin 11 (CSB).
+#define USI_MT3620_BT_GB_ISU1_SPI USI_MT3620_BT_COMBO_ISU1_SPI
+
+// ISU1 I2C is exposed on J32: pin 13 (SDA) and pin 16 (SCL).
+#define USI_MT3620_BT_GB_ISU1_I2C USI_MT3620_BT_COMBO_ISU1_I2C
+
+// ISU2 UART is exposed on USB
+#define USI_MT3620_BT_GB_ISU2_UART USI_MT3620_BT_COMBO_ISU2_UART
+
+// ISU3 UART/RS232/RS485 is exposed on J42: pin 7 (CTS_232/RX-485), pin 2 (TX_232/TX-485), pin 3 (RX_232/RX+485), pin 6 (RTS_232/TX+485).
+#define USI_MT3620_BT_GB_ISU3_UART USI_MT3620_BT_COMBO_ISU3_UART

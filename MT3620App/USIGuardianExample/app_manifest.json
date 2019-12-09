@@ -1,0 +1,31 @@
+{
+  "SchemaVersion": 1,
+  "Name": "USIGuardianExample",
+  "ComponentId": "99f54421-c65f-4d5f-a93a-7f4ab3701055",
+  "EntryPoint": "/bin/app",
+  "CmdArgs": [ "ScopeID" ],
+  "Capabilities": {
+    "Gpio": [
+      "$USI_BT_LED_RED",
+      "$USI_BT_LED_GREEN",
+      "$USI_BT_LED_BLUE",
+      "$USI_WIFI_LED_RED",
+      "$USI_WIFI_LED_GREEN",
+      "$USI_WIFI_LED_BLUE",
+      "$USI_BUTTON_1",
+      "$USI_BUTTON_2",
+      "$USI_NRF52_RESET",
+      "$USI_NRF52_DFU",
+      "$USI_RS485_CONTROL"
+    ],
+    "Uart": [ "$USI_NRF52_UART", "$USI_MT3620_BT_GB_ISU2_UART", "$USI_MT3620_BT_GB_ISU3_UART" ],
+    "WifiConfig": true,
+    "AllowedConnections": [ "global.azure-devices-provisioning.net" ],
+    "AllowedTcpServerPorts": [ 11000 ],
+    "DeviceAuthentication": "00000000-0000-0000-0000-000000000000",
+    "NetworkConfig": true,
+    "SntpService": true,
+    "DhcpService": true
+  },
+  "ApplicationType": "Default"
+}

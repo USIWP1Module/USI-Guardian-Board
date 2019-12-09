@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\WiFiSetupByBT">
+      <UniqueIdentifier>{c3500cb5-5742-49fb-a57f-566ec2b234da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\WiFiSetupByBT">
+      <UniqueIdentifier>{5ce7937d-5417-4691-8631-6532e2115a71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\USIUart">
+      <UniqueIdentifier>{0703196b-c16c-4e83-abca-004107ae3137}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\USIUart">
+      <UniqueIdentifier>{174097c3-f45e-4490-baf9-0b264ce9c97f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\USIPrivateEthernet">
+      <UniqueIdentifier>{c7bd3709-ed10-48fe-8b24-43a08da1f035}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\USIPrivateEthernet">
+      <UniqueIdentifier>{4dca890f-dcc9-4ef0-83ce-f2e646d91be4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\USIAzureIoT">
+      <UniqueIdentifier>{adb00729-d71e-46d1-a2ed-5bbe8328d43c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\USIAzureIoT">
+      <UniqueIdentifier>{dfc6a6ef-72df-41fc-8095-112ee2fff130}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\USIRS232_485">
+      <UniqueIdentifier>{50b2f19f-3b66-4836-8ac8-f7600cef959e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\USIRS232_485">
+      <UniqueIdentifier>{15799805-aa50-4807-b5e7-b87d1b8c6dbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nordic">
+      <UniqueIdentifier>{a090c9a6-bfea-42cd-aa0e-3637e3f3cbbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nordic\Header Files">
+      <UniqueIdentifier>{97d490c5-09cf-4a55-bf67-ce52a5882fa9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nordic\Source Files">
+      <UniqueIdentifier>{f27a9291-4236-4a20-9934-2ef3ed32cddb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <UpToDateCheckInput Include="app_manifest.json" />
+    <ClCompile Include="epoll_timerfd_utilities.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wifisetupbybt.c">
+      <Filter>Source Files\WiFiSetupByBT</Filter>
+    </ClCompile>
+    <ClCompile Include="usi_uart.c">
+      <Filter>Source Files\USIUart</Filter>
+    </ClCompile>
+    <ClCompile Include="usi_private_ethernet.c">
+      <Filter>Source Files\USIPrivateEthernet</Filter>
+    </ClCompile>
+    <ClCompile Include="echo_tcp_server.c">
+      <Filter>Source Files\USIPrivateEthernet</Filter>
+    </ClCompile>
+    <ClCompile Include="parson.c">
+      <Filter>Source Files\USIAzureIoT</Filter>
+    </ClCompile>
+    <ClCompile Include="usi_azureiot.c">
+      <Filter>Source Files\USIAzureIoT</Filter>
+    </ClCompile>
+    <ClCompile Include="usi_rs232_485.c">
+      <Filter>Source Files\USIRS232_485</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\message_protocol_utilities.c">
+      <Filter>Source Files\WiFiSetupByBT</Filter>
+    </ClCompile>
+    <ClCompile Include="blecontrol_message_protocol.c">
+      <Filter>Source Files\WiFiSetupByBT</Filter>
+    </ClCompile>
+    <ClCompile Include="devicecontrol_message_protocol.c">
+      <Filter>Source Files\WiFiSetupByBT</Filter>
+    </ClCompile>
+    <ClCompile Include="message_protocol.c">
+      <Filter>Source Files\WiFiSetupByBT</Filter>
+    </ClCompile>
+    <ClCompile Include="wificonfig_message_protocol.c">
+      <Filter>Source Files\WiFiSetupByBT</Filter>
+    </ClCompile>
+    <ClCompile Include="file_view.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mem_buf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nordic\crc.c">
+      <Filter>nordic\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nordic\dfu_uart_protocol.c">
+      <Filter>nordic\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nordic\slip.c">
+      <Filter>nordic\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wifisetupbybt.h">
+      <Filter>Header Files\WiFiSetupByBT</Filter>
+    </ClInclude>
+    <ClInclude Include="applibs_versions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="epoll_timerfd_utilities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mt3620.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="usi_mt3620_bt_combo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="usi_mt3620_bt_guardian.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="usi_uart.h">
+      <Filter>Header Files\USIUart</Filter>
+    </ClInclude>
+    <ClInclude Include="usi_private_ethernet.h">
+      <Filter>Header Files\USIPrivateEthernet</Filter>
+    </ClInclude>
+    <ClInclude Include="echo_tcp_server.h">
+      <Filter>Header Files\USIPrivateEthernet</Filter>
+    </ClInclude>
+    <ClInclude Include="parson.h">
+      <Filter>Header Files\USIAzureIoT</Filter>
+    </ClInclude>
+    <ClInclude Include="usi_azureiot.h">
+      <Filter>Header Files\USIAzureIoT</Filter>
+    </ClInclude>
+    <ClInclude Include="usi_rs232_485.h">
+      <Filter>Header Files\USIRS232_485</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\blecontrol_message_protocol_defs.h">
+      <Filter>Header Files\WiFiSetupByBT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\message_protocol_private.h">
+      <Filter>Header Files\WiFiSetupByBT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\message_protocol_public.h">
+      <Filter>Header Files\WiFiSetupByBT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\message_protocol_utilities.h">
+      <Filter>Header Files\WiFiSetupByBT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\wificonfig_message_protocol_defs.h">
+      <Filter>Header Files\WiFiSetupByBT</Filter>
+    </ClInclude>
+    <ClInclude Include="blecontrol_message_protocol.h">
+      <Filter>Header Files\WiFiSetupByBT</Filter>
+    </ClInclude>
+    <ClInclude Include="devicecontrol_message_protocol.h">
+      <Filter>Header Files\WiFiSetupByBT</Filter>
+    </ClInclude>
+    <ClInclude Include="devicecontrol_message_protocol_defs.h">
+      <Filter>Header Files\WiFiSetupByBT</Filter>
+    </ClInclude>
+    <ClInclude Include="message_protocol.h">
+      <Filter>Header Files\WiFiSetupByBT</Filter>
+    </ClInclude>
+    <ClInclude Include="wificonfig_message_protocol.h">
+      <Filter>Header Files\WiFiSetupByBT</Filter>
+    </ClInclude>
+    <ClInclude Include="file_view.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mem_buf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nordic\crc.h">
+      <Filter>nordic\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nordic\dfu_defs.h">
+      <Filter>nordic\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nordic\dfu_uart_protocol.h">
+      <Filter>nordic\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nordic\slip.h">
+      <Filter>nordic\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\External NRF52 Firmware\nrf52832_WiFiSetupByBT.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\External NRF52 Firmware\nrf52832_WiFiSetupByBT.dat">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\External NRF52 Firmware\s132_nrf52_6.1.0_softdevice.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\External NRF52 Firmware\s132_nrf52_6.1.0_softdevice.dat">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
